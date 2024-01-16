@@ -189,9 +189,12 @@ nav a {
 }
 
 .contact-section {
+    padding: 30px;
     border: 1px solid;
+    border-radius: 5px;
     display: flex;
     margin-top: 100px;
+    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.5);
 }
 
 .social {
