@@ -10,7 +10,7 @@
 
 .container {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background: rgb(131, 58, 180);
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
     display: flex;
@@ -19,17 +19,17 @@
 }
 
 h1 {
-    font-size: 10rem;
-    margin-top: 50px;
+    font-size: 5rem;
+    margin-top: 100px;
 }
 
 nav {
-    /* border: 1px solid; */
+    width: 90%;
     position: absolute;
     top: 0;
     display: flex;
     justify-content: flex-end;
-    width: 25%;
+
     font-size: 3rem;
     margin-top: 10px;
 }
@@ -83,7 +83,7 @@ nav li a:hover {
 .projects-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-around;
     align-items: center;
     width: 90%;
@@ -94,7 +94,7 @@ nav li a:hover {
     height: 250px;
     width: 180px;
     border-radius: 10px;
-    
+
 }
 
 .project {
@@ -105,6 +105,7 @@ nav li a:hover {
     height: 250px;
     width: 180px;
     border-radius: 10px;
+    box-shadow: 5px 5px 30px rgba(0, 1, 1, 1);
 }
 
 .project img:hover {
@@ -120,19 +121,51 @@ nav li a:hover {
     font-size: 3rem;
 }
 
-.contact-section {
+.info-holder {
     display: flex;
+    margin-top: 20px;
+}
+
+.tech-section {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 50%;
-    width: 50%;
+    width: 70%;
+}
 
+.info {
+
+    margin: 30px;
+
+}
+
+.info h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+
+}
+
+.info li {
+    font-size: 25px;
+
+}
+
+.info p {
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.info p a {
+    font-size: 40px;
+    font-weight: 400;
 }
 
 .social-icon {
     height: 100px;
     width: 100px;
-    margin: 50px;
+    margin: 10px;
 }
 
 .social-icon img {
@@ -146,4 +179,118 @@ nav li a:hover {
     height: 300px;
     width: 300px;
     border: 4px solid white;
+}
+
+nav a {
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.contact-section {
+    display: flex;
+}
+
+.social{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.social a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+#contact-info{
+    font-size: 25px;
+    margin-top: 100px;
+    
+}
+
+@media only screen and (max-width: 450px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .glass-container {
+        margin-top: 50px;
+    }
+
+    #aboutMeText {
+        font-size: 20px;
+    }
+
+    nav {
+        font-size: 30px;
+    }
+
+    .heroimage {
+        top: -123px;
+        left: -40px;
+        height: 80px;
+        width: 80px;
+
+    }
+
+    .projects-container {
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+    }
+
+    .project {
+        height: 200px;
+        width: 100px;
+    }
+
+    .project img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .project img:hover {
+        height: 210px;
+        width: 110px;
+    }
+
+
+    .heroimage img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .tech-section {
+        flex-direction: column;
+    }
+
+    .info h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+
+    }
+
+    .info li {
+        font-size: 15px;
+
+    }
+
+    .info p {
+        font-size: 15px;
+    }
+
+    .info-holder {
+        flex-direction: column;
+    }
+
+    .container {
+        height: 100%;
+    }
+
+    .tech-section {
+        margin-top: 50px;
+    }
 }
