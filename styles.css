@@ -189,10 +189,12 @@ nav a {
 }
 
 .contact-section {
+    border: 1px solid;
     display: flex;
+    margin-top: 100px;
 }
 
-.social{
+.social {
     padding: 15px;
     display: flex;
     justify-content: center;
@@ -206,10 +208,10 @@ nav a {
     font-size: 30px;
 }
 
-#contact-info{
+#contact-info {
     font-size: 25px;
     margin-top: 100px;
-    
+
 }
 
 @media only screen and (max-width: 450px) {
@@ -218,7 +220,7 @@ nav a {
     }
 
     .glass-container {
-        margin-top: 50px;
+        /* margin-top: 50px; */
     }
 
     #aboutMeText {
@@ -226,7 +228,13 @@ nav a {
     }
 
     nav {
-        font-size: 30px;
+        font-size: 15px;
+    }
+
+    nav li{
+        display: flex;
+        padding: 1px;
+        margin: 0;
     }
 
     .heroimage {
@@ -243,7 +251,7 @@ nav a {
     }
 
     .project {
-        height: 200px;
+        height: 150px;
         width: 100px;
     }
 
@@ -278,6 +286,7 @@ nav a {
 
     }
 
+
     .info p {
         font-size: 15px;
     }
@@ -287,10 +296,15 @@ nav a {
     }
 
     .container {
-        height: 100%;
+        min-height: 100vh;
+        max-height: 100%;
     }
 
     .tech-section {
         margin-top: 50px;
     }
+
+    /* .contact-section{
+        height: 100vh;
+    } */
 }
