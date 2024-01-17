@@ -132,7 +132,8 @@ nav li a:hover {
     justify-content: center;
     align-items: center;
     height: 50%;
-    width: 70%;
+    /* width: 70%; */
+    
 }
 
 .info {
@@ -154,7 +155,7 @@ nav li a:hover {
 
 .info p {
     margin-top: 30px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .info p a {
@@ -221,9 +222,12 @@ nav a {
     h1 {
         font-size: 40px;
     }
-
+    .container{
+        height: 100%;
+    }
     .glass-container {
         /* margin-top: 50px; */
+        height: 100%;
     }
 
     #aboutMeText {
@@ -276,6 +280,7 @@ nav a {
 
     .tech-section {
         flex-direction: column;
+        height: 80%;
     }
 
     .info h3 {
