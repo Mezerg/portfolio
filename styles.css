@@ -14,6 +14,7 @@
     background: rgb(131, 58, 180);
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -133,7 +134,7 @@ nav li a:hover {
     align-items: center;
     height: 50%;
     /* width: 70%; */
-    
+
 }
 
 .info {
@@ -161,6 +162,10 @@ nav li a:hover {
 .info p a {
     font-size: 40px;
     font-weight: 400;
+}
+
+.social {
+    font-size: 2rem;
 }
 
 .social-icon {
@@ -222,9 +227,11 @@ nav a {
     h1 {
         font-size: 40px;
     }
-    .container{
+
+    .container {
         height: 100%;
     }
+
     .glass-container {
         /* margin-top: 50px; */
         height: 100%;
@@ -238,7 +245,7 @@ nav a {
         font-size: 15px;
     }
 
-    nav li{
+    nav li {
         display: flex;
         padding: 1px;
         margin: 0;
