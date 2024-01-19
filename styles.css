@@ -322,4 +322,12 @@ nav a {
     /* .contact-section{
         height: 100vh;
     } */
+    .social{
+        font-size: 15px;
+    }
+
+    .contact-section{
+        border: none;
+        box-shadow: none;
+    }
 }
